@@ -1,0 +1,130 @@
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #eaeaea;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* MAIN GRID */
+.grid {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  padding: 0rem 2rem;
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TERMINAL CARD */
+.card {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 10px;
+  overflow: hidden;
+
+  padding-bottom: 1rem; /* extra space at bottom */
+
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeIn 0.5s ease forwards;
+
+  transition: 0.3s ease border, 0.3s ease background, 0.3s ease box-shadow;
+
+  &:hover {
+    border-color: #333;
+    background: #121212;
+    box-shadow: 0 0 12px rgba(0, 255, 120, 0.18);
+  }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TERMINAL HEADER */
+.header {
+  background: #111;
+  padding: 1rem 1.3rem;     /* increased padding */
+  font-family: monospace;
+  border-bottom: 1px solid #1e1e1e;
+  color: #00ff90;
+  font-size: 1.05rem;       /* larger text */
+  font-weight: 500;
+
+  .prompt {
+    margin-right: 0.5rem;
+  }
+}
+
+/* TERMINAL BODY */
+.body {
+  padding: 1.5rem 1.3rem;   /* more padding around body text */
+
+  p {
+    color: #d8d8d8;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    font-size: 1rem;        /* increased body text size */
+  }
+}
+
+/* STACK TAGS */
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.3rem;
+
+  li {
+    list-style: none;
+    padding: 0.35rem 0.75rem;   /* larger tags + padding */
+    background: #181818;
+    border-radius: 6px;
+    color: #8ab4f8;
+    font-size: 0.88rem;         /* bigger tag text */
+    font-family: monospace;
+  }
+}
+
+/* LINKS (code & live) */
+.links {
+  display: flex;
+  gap: 1.2rem;
+
+  a {
+    color: #8ab4f8;
+    font-weight: 600;
+    font-size: 0.95rem;        /* slightly bigger */
+    text-decoration: none;
+    transition: 0.2s ease color;
+
+    &:hover {
+      color: #a7c9ff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.noLinks {
+  display: flex;
+  gap: 1.2rem;
+
+  a {
+    font-size: 0.95rem;        /* slightly bigger */
+    text-decoration: none;
+    transition: 0.2s ease color;
+
+    &:hover {
+      color: #a7c9ff;
+      text-decoration: underline;
+    }
+  }
+}
