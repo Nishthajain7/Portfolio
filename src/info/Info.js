@@ -99,7 +99,7 @@ export const info = {
         },
         {
             name: "Scribe-Android (Wikimedia)",
-            description: "Android keyboards for language learners. Features include translation, verb conjugation and word annotation that give users the tools needed to communicate.",
+            description: "An open-source Android keyboard pack for language learners, providing tools like verb conjugation and word annotation.",
             stack: ["Kotlin"],
             code: "https://github.com/scribe-org/Scribe-Android/",
         },
@@ -114,22 +114,36 @@ export const info = {
     hackathons: [
   {
     title: "Define3 Hackathon",
-    date: "Feb 2025",
-    description: "Built a centralized skill-tracking platform for student career guidance. Responsible for frontend architecture, dashboards, and data visualization.",
-    role: "Frontend Lead",
-    image: require("../img/mock1.png"),
+    date: "March 2025",
+    description: "Waste management platform features Geo-tagged reporting of waste sites through image uploads with real-time progress on OpenStreetMap",
+    role: "1st Prize + Fresher's prize",
+    image: require("../img/define.jpeg"),
     links: {
-      writeup: "https://github.com/your/repo-or-writeup",
-      certificate: "https://example.com/certificate.pdf"
+      code: "https://github.com/Nishthajain7/Eureka",
+      certificate: require("../img/Define.png")
     }
   },
   {
-    title: "amFOSS Hacktoberfest",
-    date: "Oct 2024",
-    description: "Mentored contributors and built a notes app feature during the event.",
-    role: "Mentor / Contributor",
-    image: require("../img/mock1.png"),
-    links: {}
+    title: "Olabs Hackathon",
+    date: "February 2025",
+    description: "AI-powered virtual teacher designed to assist students in performing and understanding experiments on the OLabs platform",
+    role: "",
+    image: require("../img/olabs.jpeg"),
+    links: {
+      code: "https://github.com/ItsAbhinavM/Vidya/tree/main",
+      certificate: require("../img/olabs.pdf")
+    }
+  },
+  {
+    title: "Indic Wikimedia Hackathon Kochi",
+    date: "July 2025",
+    description: "Contributed  to Scribe Android, an open-source keyboard pack for language learners, providing tools like verb conjugation and word annotation.",
+    role: "",
+    image: require("../img/wikimedia.png"),
+    links: {
+      code: "https://github.com/scribe-org/Scribe-Android",
+      certificate: require("../img/Indic Wikimedia Kochi.jpg")
+    }
   }
 ]
 

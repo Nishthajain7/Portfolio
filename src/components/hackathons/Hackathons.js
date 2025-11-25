@@ -36,8 +36,8 @@ export default function Hackathons({ innerRef }) {
                 <p className={Style.role}>{h.role}</p>
 
                 <div className={Style.links}>
-                  {h.links?.writeup && <a href={h.links.writeup}>Writeup</a>}
-                  {h.links?.certificate && <a href={h.links.certificate}>Certificate</a>}
+                  {h.links?.code && <a href={h.links.code} target="_blank" rel="noopener noreferrer">Code</a>}
+                  {h.links?.certificate && <a href={h.links.certificate} target="_blank" rel="noopener noreferrer">Certificate</a>}
                 </div>
               </div>
 
